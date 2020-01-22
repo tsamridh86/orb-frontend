@@ -7,6 +7,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { commons } from '../../commons/languages/en'
 import { Drawer } from '@material-ui/core';
+import { MainDrawer } from '../Menu/MainDrawer';
 
 export const MainHeader = () => {
   const [ isDrawerOpen, setOpen] = useState<boolean>(false);
@@ -24,7 +25,7 @@ export const MainHeader = () => {
         </Toolbar>
       </AppBar>
       <Drawer open={isDrawerOpen} onClose={() => setOpen(false)}>
-            hello there this is me
+            <MainDrawer/>
         </Drawer>
       </>
     )

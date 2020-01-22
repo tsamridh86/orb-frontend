@@ -1,11 +1,11 @@
 import React from 'react'
+import { List, ListItem } from '@material-ui/core';
 
-interface AcceptableProps {
-    isOpen: boolean;
-}
-
-export const MainDrawer = (props : AcceptableProps) => {
+export const MainDrawer = () => {
     return(
-        <div> lol </div>
+        <List>
+            <ListItem> Registration </ListItem>
+            <ListItem> Devices </ListItem>
+        </List>
     )
 }
