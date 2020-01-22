@@ -1,11 +1,13 @@
-import React from 'react'
-import { MainHeader } from './components/Header/MainHeader';
+import React from 'react';
+import MainHeader from './components/Header/MainHeader';
+import Router from './components/Body/Router/Router';
 
 
-const App = () => {
-  return (
+const App = () => (
+  <div>
     <MainHeader />
-  );
-}
+    <Router />
+  </div>
+);
 
 export default App;
